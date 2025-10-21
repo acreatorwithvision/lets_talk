@@ -1,5 +1,6 @@
 const express=require('express');
 
+require('./config/db.js');
 //Route files
 const messageRoutes=require('./routes/messages');
 

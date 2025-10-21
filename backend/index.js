@@ -1,3 +1,8 @@
+const dotenv=require('dotenv');
+//Load Environment Variables from .env file
+//This MUST be before any file that needs process.env
+dotenv.config();
+
 const app=require('./src/app');
 
 const PORT=process.env.PORT || 3000;
